@@ -22,4 +22,11 @@ class CalculatorTest {
         assertEquals(expect, result);
         System.out.println("Test 2 passed");
     }
+    @Test
+    void multiply() {
+        int expect = 10;
+        int result = calculator.multiply(5,2);
+        assertEquals(expect, result);
+        System.out.println("Test 3 passed");
+    }
 }
