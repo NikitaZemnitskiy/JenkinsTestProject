@@ -16,4 +16,8 @@ public class Calculator {
         System.out.println("Multiply operation");
         return a * b;
     }
+    public int division (int a, int b) {
+        System.out.println("division operation");
+        return a / b;
+    }
 }
