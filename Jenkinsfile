@@ -10,6 +10,7 @@ pipeline {
             steps {
                 git 'https://github.com/NikitaZemnitskiy/JenkinsTestProject.git'
                 sh "mvn -Dmaven.test.failure.ignore=true clean package"
+                telegramSend 'Start?'
             }
 
             post {
@@ -18,6 +19,7 @@ pipeline {
                 success {
                     junit '**/target/surefire-reports/TEST-*.xml'
                     archiveArtifacts 'target/*.jar'
+                     telegramSend 'Succes build!'
                 }
             }
         }
