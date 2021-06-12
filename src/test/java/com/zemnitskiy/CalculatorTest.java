@@ -29,4 +29,11 @@ class CalculatorTest {
         assertEquals(expect, result);
         System.out.println("Test 3 passed");
     }
+    @Test
+    void multiplyWrong() {
+        int expect = 10;
+        int result = calculator.multiply(2,2);
+        assertNotEquals(result, expect);
+        System.out.println("Test 3 passed");
+    }
 }
