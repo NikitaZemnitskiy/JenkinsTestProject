@@ -25,7 +25,7 @@ class CalculatorTest {
     @Test
     void multiply() {
         int expect = 10;
-        int result = calculator.multiply(5,2);
+        int result = calculator.multiply(1,2);
         assertEquals(expect, result);
         System.out.println("Test 3 passed");
     }
